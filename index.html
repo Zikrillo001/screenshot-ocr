@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rasmdagi Matnni Ajratuvchi</title>
+  <title>Screenshot Matn Ajratuvchi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🖼️ Screenshotdan Matn Ajratuvchi</h1>
-    <p class="subtitle">Snipping Tool yoki Print Screen orqali rasm oling va shu oynaga <strong>Ctrl + V</strong> bilan joylang.</p>
+  <main class="container">
+    <h1>📸 Screenshot’dan Matn Ajratish</h1>
+    <p>Rasmni screenshot qiling va bu oynaga <b>Ctrl + V</b> bilan joylang.</p>
 
-    <div class="preview-box">
-      <img id="imagePreview" src="#" alt="Rasm bu yerda chiqadi" />
+    <div class="drop-zone" id="dropZone">
+      <p>🖼️ Screenshot joylash uchun shu yerga <b>Ctrl + V</b> bosing</p>
+      <img id="imagePreview" alt="Rasm" />
     </div>
 
-    <div class="output">
-      <h3>🔍 Aniqlangan Matn:</h3>
-      <pre id="outputText">Hech qanday rasm yuklanmagan.</pre>
+    <div class="output-box">
+      <div class="header">
+        <h2>📝 Aniqlangan matn:</h2>
+        <button id="copyBtn">📋 Nusxalash</button>
+      </div>
+      <pre id="outputText">Hech qanday rasm hali yuklanmagan.</pre>
+      <p id="copyStatus"></p>
     </div>
-  </div>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
   <script src="script.js"></script>
