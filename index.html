@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasmdagi Matnni Ajratuvchi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖼️ Screenshotdan Matn Ajratuvchi</h1>
+    <p class="subtitle">Snipping Tool yoki Print Screen orqali rasm oling va shu oynaga <strong>Ctrl + V</strong> bilan joylang.</p>
+
+    <div class="preview-box">
+      <img id="imagePreview" src="#" alt="Rasm bu yerda chiqadi" />
+    </div>
+
+    <div class="output">
+      <h3>🔍 Aniqlangan Matn:</h3>
+      <pre id="outputText">Hech qanday rasm yuklanmagan.</pre>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
