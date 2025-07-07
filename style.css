@@ -20,6 +20,12 @@ body {
 h1 {
   margin-bottom: 10px;
   color: #2c3e50;
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
 }
 
 .drop-zone {
@@ -54,6 +60,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 #copyBtn {
@@ -76,10 +84,62 @@ h1 {
   padding-top: 10px;
   font-size: 15px;
   color: #333;
+  overflow-x: auto;
 }
 
 #copyStatus {
   font-size: 14px;
-  color: green;
   margin-top: 8px;
+}
+
+/* ========================= */
+/* 📱 MEDIA QUERIES START   */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .drop-zone {
+    padding: 20px;
+  }
+
+  .output-box .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #copyBtn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #outputText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .drop-zone {
+    padding: 15px;
+  }
+
+  #copyBtn {
+    padding: 10px;
+    font-size: 15px;
+  }
 }
